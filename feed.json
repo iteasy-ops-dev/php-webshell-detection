@@ -1,25 +1,8 @@
 {
-  "Event": {
-    "id": "4375",
-    "info": "PHP Webshell YARA Rules",
-    "date": "2025-02-20",
-    "attribute_count": "2",
-    "Orgc": {"name": "YourOrganization"},
-    "Attribute": [
-      {
-        "type": "yara",
-        "category": "Payload delivery",
-        "value": "rule PHP_Webshell { strings: $a = \"shell_exec\" condition: $a }",
-        "comment": "Detects common PHP webshell patterns",
-        "tags": ["webshell", "php"]
-      },
-      {
-        "type": "md5",
-        "category": "Payload delivery",
-        "value": "5d41402abc4b2a76b9719d911017c592",
-        "comment": "MD5 hash of a known webshell"
-      }
-    ]
-  }
+  "url": "https://raw.githubusercontent.com/iteasy-ops-dev/php-webshell-detection/main/",
+  "name": "php-webshell-detection",
+  "provider": "iteasy-ops-dev",
+  "summary": "PHP Webshell Detection Rules",
+  "version": 1,
+  "publish_timestamp": 1708396800
 }
-
