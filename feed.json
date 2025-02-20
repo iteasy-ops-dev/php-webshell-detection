@@ -1,0 +1,12 @@
+{
+  "Event": {
+    "info": "Custom PHP Webshell YARA Feed",
+    "Attribute": [
+      {
+        "type": "yara",
+        "category": "External analysis",
+        "value": "rule php_webshell { ... }"
+      }
+    ]
+  }
+}
