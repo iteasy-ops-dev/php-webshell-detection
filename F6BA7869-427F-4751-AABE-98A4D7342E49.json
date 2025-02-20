@@ -29,7 +29,7 @@
     ],
     "Attribute": [
       {
-        "category": "External analysis",
+        "category": "Payload delivery",
         "comment": "YARA rule to detect PHP webshells",
         "deleted": false,
         "disable_correlation": false,
