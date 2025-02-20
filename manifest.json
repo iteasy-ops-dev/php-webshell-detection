@@ -8,12 +8,6 @@
       "path": "12345.json",
       "info": "PHP Webshell Detection Rules",
       "timestamp": 1708396800
-    },
-    {
-      "id": "67890",  
-      "path": "67890.json",
-      "info": "New Webshell YARA Rules",
-      "timestamp": 1708400000
     }
   ]
 }
