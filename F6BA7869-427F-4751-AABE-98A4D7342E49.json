@@ -38,25 +38,6 @@
         "type": "yara",
         "uuid": "F6BA7869-427F-4751-AABE-98A4D7342E49",
         "value": "rule PHP_Webshell { strings: $a = \"<?php eval($_POST[cmd]); ?>\" condition: $a }"
-      },
-      {
-        "category": "Payload delivery",
-        "comment": "WAVESIGN batch scripts",
-        "deleted": false,
-        "disable_correlation": false,
-        "timestamp": "1739978403",
-        "to_ids": true,
-        "type": "md5",
-        "uuid": "476055DA-1C62-4840-AF20-F27567B3563A",
-        "value": "a97a28276e4f88134561d938f60db495",
-        "Tag": [
-          {
-            "colour": "#12e300",
-            "local": true,
-            "name": "misp-galaxy:threat-actor=\"Sandworm\"",
-            "relationship_type": ""
-          }
-        ]
       }
     ]
   }
