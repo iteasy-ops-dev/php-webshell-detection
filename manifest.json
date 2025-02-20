@@ -1,0 +1,8 @@
+{
+  "version": "1",
+  "name": "PHP Webshell Detection Feed",
+  "description": "Feed containing YARA rules for PHP webshell detection.",
+  "provider": "iteasy-ops-dev",
+  "url": "https://raw.githubusercontent.com/iteasy-ops-dev/php-webshell-detection/main/feed.json",
+  "rules": ["rule1.yara", "rule2.yara"]
+}
