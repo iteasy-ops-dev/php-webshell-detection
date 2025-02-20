@@ -15,15 +15,15 @@
     },
     "Tag": [
       {
-        "colour": "#ffffff",
+        "colour": "#1aad4e",
         "local": false,
-        "name": "tlp:white",
+        "name": "type:php",
         "relationship_type": ""
       },
       {
-        "colour": "#004646",
+        "colour": "#ad1a37",
         "local": false,
-        "name": "type:OSINT",
+        "name": "type:webshell",
         "relationship_type": ""
       }
     ],
@@ -38,6 +38,17 @@
         "type": "yara",
         "uuid": "F6BA7869-427F-4751-AABE-98A4D7342E49",
         "value": "rule PHP_Webshell { strings: $a = \"<?php eval($_POST[cmd]); ?>\" condition: $a }"
+      },
+      {
+        "category": "Payload delivery",
+        "comment": "YARA rule to detect PHP webshells",
+        "deleted": false,
+        "disable_correlation": false,
+        "timestamp": "1740030421",
+        "to_ids": true,
+        "type": "yara",
+        "uuid": "475AB9DE-8327-41CC-9C25-7FC03E038D2A",
+        "value": "rule PHP_Webshell { strings: $b = \"<?php eval($_POST[cmd]); ?>\" condition: $b }"
       }
     ]
   }
