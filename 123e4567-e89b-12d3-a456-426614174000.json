@@ -1,0 +1,44 @@
+{
+  "Event": {
+    "analysis": "2",
+    "date": "2025-02-20",
+    "extends_uuid": "",
+    "info": "PHP Webshell YARA Rules",
+    "publish_timestamp": "1708396800",
+    "published": true,
+    "threat_level_id": "3",
+    "timestamp": "1708396800",
+    "uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "Orgc": {
+      "name": "iteasy",
+      "uuid": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "local": false,
+        "name": "tlp:white",
+        "relationship_type": ""
+      },
+      {
+        "colour": "#004646",
+        "local": false,
+        "name": "type:OSINT",
+        "relationship_type": ""
+      }
+    ],
+    "Attribute": [
+      {
+        "category": "External analysis",
+        "comment": "YARA rule to detect PHP webshells",
+        "deleted": false,
+        "disable_correlation": false,
+        "timestamp": "1708396800",
+        "to_ids": true,
+        "type": "yara",
+        "uuid": "aabbccdd-1234-5678-90ab-cdef12345678",
+        "value": "rule PHP_Webshell { strings: $a = \"<?php eval($_POST[cmd]); ?>\" condition: $a }"
+      }
+    ]
+  }
+}
